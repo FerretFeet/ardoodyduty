@@ -38,6 +38,11 @@ body, * {
     text-shadow: 1px 1px 1px black;
 }
 
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 @media screen and (max-width:860px) {
     #main-dropdown:hover #main-dropdown-menu,
     #main-dropdown:focus-within #main-dropdown-menu {
@@ -315,6 +320,12 @@ display: flex;
     width: 2rem;
     left: -2.5rem;
     top: 1rem;
+
+
+    /*FIXFIXFIXFIXFIXFIXIFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFF*/
 }#value-prop {
     background-image: url(./imgs/DogPictures/PXL_20230223_181542803.jpg);
    background-size: cover;
