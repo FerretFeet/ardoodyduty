@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Doody Duty</title>
+    
+    <script src="script.js" defer></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+ <!--   <style>.img-text {
+        font-family: 'Indie Flower';
+        font-size: 24pt; font-weight:600; letter-spacing: 2px};</style>
+ -->
+    </head>
+<body>
+    <nav class="outline-text" id="nav-header" aria-label="Main Naviagation">
+        
+            <ul class="outline-text" id="nav-menu">
+                <!--homepage-->
+                <li><a href="./index.html">
+                    <img src="./imgs/logo 6(1).png" alt="logo" class="logo"> <!--ADD LINK-->
+                    </a>
+                </li>
+
+                <!--Dropdown for other pages-->
+                <li class="dropdown" id="main-dropdown">
+                    <!--Button to access dropdown-->
+                    <button type="button" class="hamburger-dropdown" aria-expanded="false" aria-controls="page-link-dropdown"></button>
+                    <ul class="dropdown-menu" id="main-dropdown-menu">
+                
+                        <li><a href="./pages/about.html" class="navlinks">About</a></li>
+
+                        <!--Services Dropdown-->
+                        <li><a href="services" class="navlinks">Services</a></li>
+
+                        <li><a href="facts" class="navlinks">Dog Waste facts</a></li>
+
+                        <li><a href="faq" class="navlinks">FAQ</a></li>
+
+                        <li><a href="signup" class="navlinks">Sign Up<br>Sign In</a> <!--MAKE DIFFERENT LINES--></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+    <header class="outline-text">
+        <img src="./imgs/DogPictures/tayandday1.jpg" alt="A photo of happy dogs" class="header"
+        style="width: 100%; height: auto; max-height: 90vh; object-fit:fill"> <!--HEIGHT = TOPNAVLINK HEIGHT - 100-->
+        <hgroup>
+            <h1 class="header" id="header-text-top">You Deserve A Cleaner Yard <br> And So Do Your Pets</h1>
+            <p class="header" id="header-text-bottom">I Do My Business After Your Pets Do Theirs</p>
+        </hgroup>
+    </header>
+    <main>
+        <section id="service-breakdown">
+            <div id="service-breakdown-container">
+                <img src="./imgs/schedule.svg" alt="" class="img-text" id="schedule-img"
+                    style="width:clamp(100px, 10vw, 350px); height: auto; object-fit: cover;"> <!--Schedule. CSS background img for accessability?-->    
+                <img src="./imgs/xtralogo1-cropped.svg" alt="" class="img-text" id="dog-poop-img"
+                    style="width:clamp(100px, 10vw, 350px); height: auto; object-fit: fill;"> <!--Schedule. CSS background img for accessability?-->        
+                <img src="./imgs/yardvector-cropped.svg" alt="" class="img-text" id="yard-img"
+                style="width:clamp(100px, 10vw, 350px); height: auto; object-fit: cover; border-radius: 10px"> <!--Schedule. CSS background img for accessability?-->
+                
+                <p class="img-text" id="schedule-text">Sign Up and Schedule</p>
+                <p class="img-text" id="dog-poop-text">I'll come by to pick up the doody</p>
+                <p class="img-text" id="yard-text">Enjoy your clean yard!</p>
+            </div>
+            <div class="flex-container">
+                <button type="button" class="nav-button outline-text" id="sign-up">Sign Up Now</button>
+            </div>
+        </section>
+        <section id="services-quickview">
+            <div class="section-banner outline-text">
+                <h2>Services Offered</h2>
+            </div>
+            <dl id="services-offered">
+                
+                <dt>Dog Waste Removal</dt>
+                <dd>One Time, Once a Week, or Twice a Week I'll come by to pick up your dog's waste or clean an event space</dd>
+
+                <dt>Litter Box Exchange Program</dt>
+                <dd>Once a Week I will pick up your dirty full litterboxes, and replace them with clean boxes filled with clean litter</dd>
+
+                <dt>Large Animal Waste Relocation</dt>
+                <dd>I'll come out to your pasture and clean up the manure.  Must provide waste dump site</dd>
+
+                <dt>Yard De-Odorizing</dt>
+                <dd>I'll spray my organic and safe Yard DeOdorizing Solution over affected areas of your lawn, leaving it smelling fresh</dd>
+
+                <dt>Off-Site Waste Disposal</dt>
+                <dd>By default I'll leave the waste bagged up in your street bin.  If this doesn't work for you, I'll haul it off and through it in my compost.</dd>
+
+                <dt>Leaf Raking</dt>
+                <dd>In order for me to thoroughly search your yard for pet waste, your yard should be relatively clear of leaves. 
+                    If necessary, I can rake up your yard and remove the leaves for you.
+                </dd>
+            </dl>
+            <div class="flex-container">
+                <button type="button" class="nav-button outline-text" id="more-services">More Services</button>
+            </div>
+        </section>
+        <section id="value-prop">
+            <div class="section-banner outline-text">
+                <h2>Why Should You Clean Your Dogs Waste?</h2>
+            </div>
+
+            <ul id="threextwo-list">
+                <li class="dog-head-bullet">
+                    We've all taken a walk through our lawn only to promptly step
+                    in an unseen pile dog doody.  Sign Up with me fear no more!
+                </li>
+                <li class="dog-head-bullet">
+                    <strong>It's bad for your grass!</strong> Manure might be a great fertilizer,
+                     but due to their high-protein diet, dog waste is very high in nitrogren content, which kills grass!
+                </li>
+                <li class="dog-head-bullet">
+                    Dog poop can harbor several diseases and parasites (e.g. hookworm, tapeworm), harmful to you and your pets.  
+                </li>
+                <li class="dog-head-bullet">
+                    <strong>It Stinks!</strong> Even though you may only smell it when your near it,
+                     with their increased sense of smell, your dogs are constantly breathing it in.
+                </li>
+                <li class="dog-head-bullet">
+                    You wouldn't like poop in your play area, and neither do your dogs!
+                      Like us, they don't want to worry about stepping in their waste!
+                </li>
+                <li class="dog-head-bullet">
+                    <strong>You can own your yard again!</strong>  I've seen friends and family let crap pile up so bad
+                     their hesitant to even go in their backyard.  Enjoy your yard, call us!
+                </li>
+            </ul>
+            <div class="flex-container">
+                <button type="button" class="nav-button outline-text" id="dog-waste-facts">Dog Waste Facts</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div id="business-contact-info">
+            <div>AR Doody Duty L.L.C.</div>
+            <div>Owned and Operated by Brandon West</div>
+            <address class="footer-contact">
+                <div><a href="email">Brandon.West@ArDoodyDuty.com</a></div>
+                <div><a href="phone">501-722-8735</a></div>
+            </address>
+        </div>
+        <nav id="nav-footer">
+            <ul class="nav-footer-menu">
+                <li><a href='home'>Home</a></li>
+                <li><a href='services'>Services</a></li>
+                <li><a href='dog-waste-facts'>Dog Waste Facts</a></li>
+                <li><a href='faq'>Frequently Asked Questions</a></li>
+                <li><a href='tos'>Terms of Services</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
