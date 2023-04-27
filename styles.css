@@ -40,26 +40,26 @@ body, * {
 
 @media screen and (max-width:860px) {
     #main-dropdown:hover #main-dropdown-menu,
-#main-dropdown:focus-within #main-dropdown-menu {
-    display:block;
-    transform: translateX(-6rem);
-}
-#service-dropdown:hover #services-dropdown,
-#service-dropdown:focus-within #services-dropdown focus
-{
-    display: block;
-}
-#services-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    transform: translateX(6rem);
-    background-color: var(--light-brown-trans);
-    width: 50%;
-    padding: 1rem;
-    box-shadow: 1px 1px 8px 1px black;
-    text-align: center;
-}
+    #main-dropdown:focus-within #main-dropdown-menu {
+        display:block;
+        transform: translateX(-6rem);
+    }
+    #service-dropdown:hover #services-dropdown,
+    #service-dropdown:focus-within #services-dropdown focus
+    {
+        display: block;
+    }
+    #services-dropdown {
+        display: none;
+        position: absolute;
+        right: 0;
+        transform: translateX(6rem);
+        background-color: var(--light-brown-trans);
+        width: 50%;
+        padding: 1rem;
+        box-shadow: 1px 1px 8px 1px black;
+        text-align: center;
+    }
 
 }
 
@@ -149,8 +149,9 @@ header {
     position: relative;
 }
 
-#header-text-bottom, #header-text-top {
+#header-text-bottom, #header-text-top, #header-text-center {
     width: fit-content;
+    height: fit-content;
     position: absolute;
     color: white;
     background-color: var(--light-brown-trans);
@@ -161,6 +162,16 @@ header {
 #header-text-top {
     top: 3%;
     left: 3%;
+    font-size: 1.5rem;
+}
+#header-text-center {
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    text-align: center;
+    font-size: 1.25rem;
 }
 
 #header-text-bottom {
@@ -313,6 +324,7 @@ display: flex;
 /* Format footer */
 
 footer {
+    border-top: 5px solid var(--brown);
     background-color: var(--light-brown);
     padding: 0.5rem;
 }
@@ -342,39 +354,41 @@ footer {
 @media screen and (min-width: 480px) {
 /*change section 1 (service breakdown)*/
 
-#service-breakdown-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    #service-breakdown-container {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    #service-breakdown-container > p {
+        grid-row: auto;
+        grid-column: auto;
+        margin: 0;
+    }
 
 }
 
-#service-breakdown-container > p {
-    grid-row: auto;
-    grid-column: auto;
-    margin: 0;
-}
-
-}
+/*Media Break*/
 
 @media screen and (min-width:720px) {
 
-:root {
-    font-size: 18pt;
-}
+    :root {
+        font-size: 18pt;
+    }
 
-.outline-text{
-    text-shadow: 1px 1px 2px black;
-}
+    .outline-text{
+        text-shadow: 1px 1px 2px black;
+    }
 
-/*reformat value prop */
-#threextwo-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    text-align: left;
-}
+    /*reformat value prop */
+    #threextwo-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        text-align: left;
+    }
 
-#threextwo-list > .dog-head-bullet {
-    padding: 1rem;
-}
+    #threextwo-list > .dog-head-bullet {
+        padding: 1rem;
+    }
 
 }
 
@@ -383,190 +397,102 @@ footer {
 
 /* reformat header w/o nav menu*/
 
-#nav-menu > * {
-    width: auto;
-    font-weight: bold;
-}
-.logo {
-    width: 4rem;
-}
-#nav-menu {
-    justify-content:flex-start;
-}
+    #nav-menu > * {
+        width: auto;
+        font-weight: bold;
+    }
+    .logo {
+        width: 4rem;
+    }
+    #nav-menu {
+        justify-content:flex-start;
+    }
 
 
-#main-dropdown button {
-    display: none;
-}
+    #main-dropdown button {
+        display: none;
+    }
 
-#main-dropdown {
+    #main-dropdown {
+        flex-grow: 1;
+    }
+
+
+    #main-dropdown-menu {
+        display: flex;
+        position: relative;
+        z-index: auto;
+        width: auto;
+        box-shadow: none;
+        gap: 1rem;
+        align-items: flex-end;
+        flex-grow: 1;   
+    }
+    #main-dropdown-menu > * {
     flex-grow: 1;
-}
-
-
-#main-dropdown-menu {
-    display: flex;
     position: relative;
-    z-index: auto;
-    width: auto;
-    box-shadow: none;
-    gap: 1rem;
-    align-items: flex-end;
-    flex-grow: 1;   
-}
-#main-dropdown-menu > * {
-flex-grow: 1;
-position: relative;
 
-}
+    }
 
- #main-dropdown-menu > li:hover {
-    text-decoration: underline;
-    
-} 
+    #main-dropdown-menu > li:hover {
+        text-decoration: underline;
+        
+    } 
 
 
-#main-dropdown-menu > * {
-    padding: 0.25rem;
-    border-bottom: none;
-}
+    #main-dropdown-menu > * {
+        padding: 0.25rem;
+        border-bottom: none;
+    }
 
-#main-dropdown {
-    width:fit-content;
-}
+    #main-dropdown {
+        width:fit-content;
+    }
 
-}
+    }
 
+/*Media Break*/
 @media screen and (min-width:1024px) {
 
 
-#services-offered {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-    justify-content: center;
+    #services-offered {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        justify-content: center;
 
-}
-#services-offered > * {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-}
-
-#threextwo-list .dog-head-bullet {
-    background-color: var(--light-brown);
-}
-
-#value-prop {
-    background-image: url(./imgs/DogPictures/PXL_20230223_181542803.jpg),
-                    url(./imgs/DogPictures/image000005_20230221_180814.jpg);
-                    background-position: left bottom, right bottom;
-   background-size: 50% 100%, 50% 100%;
-   background-repeat: no-repeat;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem;
-}
-#business-contact-info * {
-    text-align: left;
-}
-
-}
-/* 
-@media screen and (min-width:1440px) {
- #threextwo-list {
-    display: block;
-
-}
-
-.dog-head-bullet::before {
-    content: '';
-} */
-
-
-
-/*FORMAT HEADER FOR MOBILE*/
-/*
-
-
-
-    header {
-        width: 100%;
     }
-    header #header-text-bottom {
-        width: 70%;
-        font-size: 16pt;
+    #services-offered > * {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
     }
-    #header-text-top {
-        font-size: 18pt;
+
+    #threextwo-list .dog-head-bullet {
+        background-color: var(--light-brown);
     }
-    header img {
-        height: 50vw;
+
+    #value-prop {
+        background-image: url(./imgs/DogPictures/PXL_20230223_181542803.jpg),
+                        url(./imgs/DogPictures/image000005_20230221_180814.jpg);
+                        background-position: left bottom, right bottom;
+    background-size: 50% 100%, 50% 100%;
+    background-repeat: no-repeat;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+    }
+    #business-contact-info * {
+        text-align: left;
+    }
+
 }
 
-#header-text-top, #header-text-bottom {
-    position: absolute;
-    color: white;
-    background-color: var(--bright-brown-trans);
-    padding: 0.55rem;
-    border-radius: 10px;
-    font-weight: bold;
-    border: 3px solid black;
-}
+/*ABOUT PAGE*/
 
-#header-text-top {
-    top: 3%; left: 5%;
-    text-align: center;
-}
-
-#header-text-bottom {
-    bottom: 3%; left: 5%;
-    font-size: 24pt;
-}
-
-
-
-.nav-button {
-    margin: 1rem auto 2rem auto;
-    font-size: 24pt;
-    padding: 0.5rem;
-    background-color: var(--bright-red);
-    color: white;
-    font-weight: bold;
-    box-shadow: 5px 5px 5px var(--red);
-    border: 3px solid black;
-    border-radius: 10px;
-}
-
-
-
-
-
-.section-banner {
-    background-color: var(--bright-brown);
-    text-align: center;
-    align-content: center;
-    padding: 2vh 0;
-    color: white;
-    font-size: 24pt;
-    box-shadow: 3px 3px 0.5rem var(--brown);
-    border: 3px solid var(--black);
-}
-
-
-.dog-head-bullet::before {
-    content: url(./imgs/poopemoji-cropped.svg);
-    position: absolute;
-    display: block;
-    height: 50px;
-    width: 50px;
-    left: -65px;
-    top: 10px;
-} */

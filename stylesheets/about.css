@@ -1,0 +1,61 @@
+body {
+    background-color: var(--light-brown-trans);
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+
+.twocol-media-text-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    align-items: center;
+
+
+}
+
+
+.twocol-media-text-grid img {
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 50%;
+}
+
+.twocol-mtg-text {
+    padding-bottom: 0.5rem;
+    text-indent: 1rem;
+    margin: auto;
+    text-align: left;
+}
+
+@media screen and (min-width:720px) {
+.twocol-media-text-grid {
+    grid-template-columns: 1fr 1fr
+}
+
+
+#first-para {
+    grid-column: 1 / span 2;
+    border-bottom: 2px solid var(--brown);
+    margin-bottom: 1rem;
+}
+#first-para p {
+    text-align: center;
+
+}
+
+#second-image-mtg {
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 25%;
+}
+
+}
