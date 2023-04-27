@@ -22,6 +22,10 @@
 
 }
 
+dt {
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
     
 
 body, * {
@@ -210,6 +214,10 @@ display: flex;
     border-radius: 10px;
     align-self: center;
 }
+
+.nav-button:hover {
+    background-color: var(--red);
+}
  /*Banner between content sections */
 
 .section-banner {
@@ -232,34 +240,33 @@ display: flex;
     background-color: var(--light-brown);
  }
 
- #services-offered > dt {
+ #services-offered > * {
     position: relative;
     padding: 0.8rem;
     text-align: center;
     padding-right: 3rem;
     padding-left: 3rem;
-    background-color: var(--bright-brown-trans);
  }
 
- #services-offered > dt::before{
+ #services-offered > *::before{
     content: url('./imgs/poopemoji-cropped.svg');
     position: absolute;
     display: block;
     height: 2rem;
     width: 2rem;
     left: 0.5rem;
-    top: 0.25rem;
+    top: 0.5rem;
 
  }
 
- #services-offered > dt::after {
+ #services-offered > *::after {
     content: url('./imgs/poopemoji-cropped.svg');
     position: absolute;
     display: block;
     height: 2rem;
     width: 2rem;
     right: 0.5rem;
-    top: 0.25rem;
+    top: 0.5rem;
  }
 
 #services-quickview {
@@ -297,6 +304,10 @@ display: flex;
     width: 2rem;
     left: -2.5rem;
     top: 1rem;
+}#value-prop {
+    background-image: url(./imgs/DogPictures/PXL_20230223_181542803.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 /* Format footer */
@@ -347,7 +358,7 @@ footer {
 @media screen and (min-width:720px) {
 
 :root {
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 .outline-text{
@@ -426,33 +437,57 @@ position: relative;
 
 }
 
-@media screen and (min-width:1080px) {
-:root {
-    font-size: 24pt;
-}
+@media screen and (min-width:1024px) {
+
 
 #services-offered {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
+    text-align: left;
     justify-content: center;
 
 }
 #services-offered > * {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#threextwo-list .dog-head-bullet {
+    background-color: var(--light-brown);
+}
+
+#value-prop {
+    background-image: url(./imgs/DogPictures/PXL_20230223_181542803.jpg),
+                    url(./imgs/DogPictures/image000005_20230221_180814.jpg);
+                    background-position: left bottom, right bottom;
+   background-size: 50% 100%, 50% 100%;
+   background-repeat: no-repeat;
 }
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2rem;
 }
 #business-contact-info * {
     text-align: left;
-    padding-top: 1rem;
 }
 
 }
+/* 
+@media screen and (min-width:1440px) {
+ #threextwo-list {
+    display: block;
+
+}
+
+.dog-head-bullet::before {
+    content: '';
+} */
 
 
 
@@ -510,9 +545,7 @@ footer {
     border-radius: 10px;
 }
 
-.nav-button:hover {
-    background-color: var(--red);
-}
+
 
 
 
