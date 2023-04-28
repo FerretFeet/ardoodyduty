@@ -38,10 +38,6 @@ body, * {
     text-shadow: 1px 1px 1px black;
 }
 
-section {
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
 @media screen and (max-width:860px) {
     #main-dropdown:hover #main-dropdown-menu,
@@ -337,7 +333,8 @@ display: flex;
 footer {
     border-top: 5px solid var(--brown);
     background-color: var(--light-brown);
-    padding: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 #business-contact-info *{
@@ -365,6 +362,12 @@ footer {
 @media screen and (min-width: 480px) {
 /*change section 1 (service breakdown)*/
 
+
+    section, #nav-header, footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     #service-breakdown-container {
         grid-template-columns: 1fr 1fr 1fr;
 
@@ -381,6 +384,10 @@ footer {
 /*Media Break*/
 
 @media screen and (min-width:720px) {
+    section, footer {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 
     :root {
         font-size: 18pt;
@@ -390,21 +397,14 @@ footer {
         text-shadow: 1px 1px 2px black;
     }
 
-    /*reformat value prop */
-    #threextwo-list {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        text-align: left;
-    }
 
-    #threextwo-list > .dog-head-bullet {
-        padding: 1rem;
-    }
 
 }
 
 
 @media screen and (min-width: 860px) {
+        /*reformat value prop */
+
 
 /* reformat header w/o nav menu*/
 
@@ -464,6 +464,15 @@ footer {
 
 /*Media Break*/
 @media screen and (min-width:1024px) {
+    #threextwo-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        text-align: left;
+    }
+
+    #threextwo-list > .dog-head-bullet {
+        padding: 1rem;
+    }
 
 
     #services-offered {
@@ -475,11 +484,17 @@ footer {
     }
     #services-offered > * {
         display: flex;
+        flex-direction: column;
         gap: 1rem;
-        justify-content: space-between;
+        justify-content: flex-start;
         border-bottom: 2px solid black;
         border-top: 2px solid black;
         border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+    #services-offered > * > dd {
+        display: flex;
+        align-self: flex-start;
     }
 
     #threextwo-list .dog-head-bullet {
@@ -497,7 +512,9 @@ footer {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
     }
     #business-contact-info * {
         text-align: left;
