@@ -1,3 +1,62 @@
 /* 1x1 grid then 2x2 then 3x3
 background img
 background behind ea question&answer*/
+
+h2 {
+    text-align: center;  
+}
+
+.faq {
+    display: grid;
+    grid-template-columns: 100%; /*100% - faq padding/margin - faq-child padding/margin */
+    margin: 1rem;
+    gap: 1rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+
+
+}
+
+.dl-container {
+    background-color: var(--light-brown-trans);
+    padding: 1rem;
+    border: 2px solid var(--brown);
+    box-shadow: 1px 1px 5px var(--brown);
+}
+
+.dl-container dt {
+    background-color: var(--light-brown);
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid var(--brown);
+    box-shadow: 1px 1px 5px var(--brown);
+}
+
+.dl-container dd {
+    text-indent: 1rem;
+
+}
+
+address {
+    display: inline;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .faq {
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .faq {
+        grid-template-columns: 33% 33% 33%;
+    }
+}

@@ -492,10 +492,6 @@ footer {
         border-left: 2px solid black;
         border-right: 2px solid black;
     }
-    #services-offered > * > dd {
-        display: flex;
-        align-self: flex-start;
-    }
 
     #threextwo-list .dog-head-bullet {
         background-color: var(--light-brown);
