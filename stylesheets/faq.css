@@ -2,6 +2,10 @@
 background img
 background behind ea question&answer*/
 
+body {
+    background-color: var(--light-yellow);
+}
+
 h2 {
     text-align: center;  
 }

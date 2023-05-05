@@ -10,6 +10,8 @@
     --brown: hsl(22, 58%, 43%);
     --light-brown: hsl(26, 68%, 66%);
     --light-brown-trans: hsla(26, 68%, 66%, 85%);
+    --light-yellow: hsl(56, 100%, 66%);
+
 
     --black: hsl(0, 0%, 0%);
     --bright-brown: hsl(22, 100%, 43%);
@@ -259,6 +261,7 @@ display: flex;
 
  #services-offered {
     background-color: var(--light-brown);
+    box-shadow: 3px 3px 5px 5px var(--brown);
  }
 
  #services-offered > * {
@@ -267,6 +270,7 @@ display: flex;
     text-align: center;
     padding-right: 3rem;
     padding-left: 3rem;
+    border-bottom: 2px solid black;
  }
 
  #services-offered > *::before{
@@ -291,7 +295,7 @@ display: flex;
  }
 
 #services-quickview {
-    background-color: var(--light-brown);
+    background-color: var(--light-yellow);
 }
 
 /* Format section 3 (value prop) */
@@ -304,7 +308,7 @@ display: flex;
     margin: 1.5rem 10% 1.5rem 3rem;
     gap: 1rem;
     justify-items: right;
-    text-align: justify;
+    text-align: left;
 }
 
 

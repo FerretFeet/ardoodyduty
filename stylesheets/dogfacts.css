@@ -1,3 +1,21 @@
 body {
-    background-color: var(--light-brown-trans);
+    background-color: var(--light-yellow);
 }
+
+#services-offered > div {
+    margin: 1rem;
+}
+
+#services-offered {
+    background-color: var(--light-yellow);
+    gap: 1rem;
+
+}
+
+dt, dd {
+    background-color: var(--light-brown);
+    padding: 1rem;
+    border: 2px solid var(--brown);
+    box-shadow: 1px 1px 5px 2px var(--brown);
+}
+
