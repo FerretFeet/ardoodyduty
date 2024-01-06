@@ -1,13 +1,11 @@
-body {
-    background-color: var(--light-yellow);
-}
+/* body {
+} */
 
 #services-offered > div {
     margin: 1rem;
 }
 
 #services-offered {
-    background-color: var(--light-yellow);
     gap: 1rem;
 
 }

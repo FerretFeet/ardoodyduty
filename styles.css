@@ -294,9 +294,8 @@ display: flex;
     top: 0.5rem;
  }
 
-#services-quickview {
-    background-color: var(--light-yellow);
-}
+/* #services-quickview {
+} */
 
 /* Format section 3 (value prop) */
 
